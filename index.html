@@ -1,0 +1,346 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to Web Technologies</title>
+
+    <style>
+        /* General Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #f4f7fc;
+            color: #333;
+            line-height: 1.7;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #162b75, #6c63ff);
+            color: white;
+            text-align: center;
+            padding: 75px 20px;
+        }
+
+        header h1 {
+            font-size: 40px;
+            margin-bottom: 12px;
+        }
+
+        header p {
+            font-size: 18px;
+            color: #e0e5ff;
+        }
+
+        /* Main Content */
+        body > h2,
+        body > h3,
+        body > p,
+        body > ul,
+        body > ol,
+        body > table,
+        body > img {
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        h2 {
+            color: #263b80;
+            font-size: 26px;
+            margin-top: 40px;
+            margin-bottom: 15px;
+            padding-left: 12px;
+            border-left: 5px solid #6c63ff;
+        }
+
+        h3 {
+            color: #5145cd;
+            margin-top: 20px;
+            margin-bottom: 8px;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        body > p {
+            padding: 0 15px;
+        }
+
+        /* Horizontal Line */
+        hr {
+            border: none;
+            height: 2px;
+            background: #ddd;
+            margin: 30px 0;
+        }
+
+        /* Images */
+        img {
+            display: inline-block;
+            width: 29%;
+            height: 160px;
+            object-fit: cover;
+            margin: 10px 1.5%;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.12);
+            transition: transform 0.3s ease;
+        }
+
+        img:hover {
+            transform: translateY(-7px);
+        }
+
+        /* Lists */
+        ul, ol {
+            padding: 20px 20px 20px 45px;
+            background: white;
+            border-radius: 10px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.05);
+        }
+
+        li {
+            padding: 5px;
+        }
+
+        li::marker {
+            color: #6c63ff;
+            font-weight: bold;
+        }
+
+        /* Links */
+        a {
+            color: #5145cd;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #e052a0;
+            text-decoration: underline;
+        }
+
+        /* Table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            margin-top: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        th {
+            background: #263b80;
+            color: white;
+            padding: 15px;
+            text-align: left;
+        }
+
+        td {
+            padding: 13px 15px;
+            border-bottom: 1px solid #eee;
+        }
+
+        tr:hover td {
+            background: #f0efff;
+        }
+
+        /* Conclusion */
+        body > p:last-of-type {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 5px solid #6c63ff;
+        }
+
+        /* Footer */
+        footer {
+            background: #172554;
+            color: white;
+            text-align: center;
+            padding: 30px 15px;
+            margin-top: 50px;
+        }
+
+        footer p {
+            margin: 5px;
+            color: #dbe4ff;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header {
+                padding: 50px 15px;
+            }
+
+            header h1 {
+                font-size: 29px;
+            }
+
+            h2 {
+                font-size: 22px;
+                margin-left: 15px;
+                margin-right: 15px;
+            }
+
+            h3 {
+                margin-left: 15px;
+            }
+
+            img {
+                width: 90%;
+                height: 180px;
+                display: block;
+                margin: 15px auto;
+            }
+
+            table {
+                width: 95%;
+                font-size: 13px;
+            }
+
+            th, td {
+                padding: 9px;
+            }
+            
+            .computer-image {
+    display: block;
+    width: 90%;
+    max-width: 900px;
+    height: 350px;
+    object-fit: cover;
+    margin: 20px auto;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+            ul, ol {
+                margin-left: 15px;
+                margin-right: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Welcome to Web Technologies</h1>
+        <p>Discover the technologies that power the internet.</p>
+    </header>
+
+    <hr>
+
+    <h2>What Are Web Technologies?</h2>
+    <p>
+        Web technologies are tools, programming languages,
+        and frameworks used to create and maintain websites
+        and web applications.
+    </p>
+
+    <h2>Types of Web Technologies</h2>
+
+    <h3>1. HTML</h3>
+    <p>HTML stands for HyperText Markup Language.
+       It provides the structure of web pages.</p>
+
+    <h3>2. CSS</h3>
+    <p>CSS stands for Cascading Style Sheets.
+       It controls the appearance and layout of websites.</p>
+
+    <h3>3. JavaScript</h3>
+    <p>JavaScript makes websites interactive and dynamic.</p>
+
+    <h2>Images of Web Technologies</h2>
+
+    <h2>Computer Technology</h2>
+
+<img class="computer-image"
+     src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=85"
+     alt="Computer and web development workspace">
+
+    <h2>Popular Web Technologies</h2>
+
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>Bootstrap</li>
+        <li>PHP</li>
+    </ul>
+
+    <h2>Useful Learning Links</h2>
+
+    <ol>
+        <li><a href="https://www.w3schools.com/html/">Learn HTML</a></li>
+        <li><a href="https://www.w3schools.com/css/">Learn CSS</a></li>
+        <li><a href="https://www.w3schools.com/js/">Learn JavaScript</a></li>
+    </ol>
+
+    <h2>Comparison of Web Technologies</h2>
+
+    <table border="1" cellpadding="10">
+        <tr>
+            <th>Technology</th>
+            <th>Full Meaning</th>
+            <th>Purpose</th>
+        </tr>
+
+        <tr>
+            <td>HTML</td>
+            <td>HyperText Markup Language</td>
+            <td>Creates webpage structure</td>
+        </tr>
+
+        <tr>
+            <td>CSS</td>
+            <td>Cascading Style Sheets</td>
+            <td>Styles webpages</td>
+        </tr>
+
+        <tr>
+            <td>JavaScript</td>
+            <td>JavaScript</td>
+            <td>Adds interactivity</td>
+        </tr>
+
+        <tr>
+            <td>PHP</td>
+            <td>PHP: Hypertext Preprocessor</td>
+            <td>Server-side programming</td>
+        </tr>
+    </table>
+
+    <h2>Conclusion</h2>
+
+    <p>
+        Web technologies play an important role in modern
+        communication, education, business, and entertainment.
+        Learning HTML, CSS, and JavaScript is a great starting
+        point for becoming a web developer.
+    </p>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 Web Technologies Project.
+           All Rights Reserved.</p>
+        <p>Created for Learning and Educational Purposes.</p>
+    </footer>
+
+</body>
+</html>
